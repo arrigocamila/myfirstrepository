@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta name="description"
+   	content="Estudio de Dieño grafico y web">
+
+   	<meta name="keywords"
+  	content="HTML, ASP, JS, DISEÑO, GRAFICO, WEB, EDICION, FOTOS, CORDOBA, ARGENTINA, SITIO, MONTAJE, FOLLETERIA, CARTELERIA">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+	<link rel="stylesheet" href="fonta/css/all.css">
+
+	<title>Contactate</title>
+</head>
+<body>
+    <div class="conteiner-fluid">
+        <nav class="navbar navbar-expand-lg">
+			<a href="index.html"><img src="./img/cadraw.png" width="100"alt="..."></a>
+			 
+			<button alrt="menu" class="navbar-toggler navbar__button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			
+			<div class="col-md-6 nav- navbar__options"> 
+				<div class="collapse navbar-collapse navbar__options__items" id="navbarSupportedContent">
+					<ul class="navbar-nav animate_animated animate_bounceInRight navbar__options__item__ul">
+						<li class="nav-item px-3 navbar__options__item_ul__li">
+							<a class="nav-link text-gold"href="servicios.html">Servicios</a>
+						</li>
+						<li class="nav-item px-3 navbar__options__item_ul__li--violeta">
+							<a class="nav-link text-gold" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item px-3 navbar__options__item_ul__li">
+							<a class="nav-link text-gold" href="ediciones.html">Ediciones</a>
+						</li>
+					
+						<li class="nav-item px-3 navbar__options__item_ul__li--violeta">
+							<a class="nav-link text-gold" href="nosotros.html">Nosotros</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div> 
+        </nav>
+
+        <form method="POST" action="/index.php" class="needs-validation" novalidate>
+
+            <div class="form-row mt-5">
+                <div class="col-md-4 mb-3">
+                    <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                    <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+                    <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validarEmail">Email:<span class="red">*</span></label>
+                    <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validarTelefono">Teléfono:</label>
+                    <input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
+                </div>
+            </div>
+        
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validarTema">Opciones:<span class="red">*</span></label>
+                    <select class="custom-select" id="validarTema" name="validarTema" required>
+                        <option selected disabled value="">Selecciona...</option>
+                        <option value="Problema con acceso a Web">Problema con acceso a Web</option>
+                        <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+                        <option value="Presupuestar">Presupuestar trabajo</option>
+                        <option value="Otras cuestiones">Otras cuestiones</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+                <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+            </div>
+        
+            <div class="form-group mb-10">
+                <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+                <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+            </div>
+        
+        </form>
+
+        <section class="container">
+            <footer class="footer">
+                <div class="row footer__div">
+                    <div class="col-md-3 footer__div__col">
+                        <ul>
+                            <li>
+                                <a class="text-light">Diseña con nosotros</a>
+                            </li><br>
+                            <li>
+                                <a href="#">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">Consulta aqui</a>
+                            </li>
+                            <li>
+                                <a href="#">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="col-md-3 footer__div__col">
+                        <ul>
+                            <li>
+                                <a class="text-light">Atención al cliente</a>
+                            </li><br>
+                            
+                            <li>
+                                <a href="#">Contáctanos</a>
+                            </li>
+                            <li>
+                                <a href="#">Políticas de privacidad y cookies</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Como trabajamos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer__div__col">
+                        <ul>
+                            <li>
+                                <a class="text-light">Visitanos</a>
+                            </li><br>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer__div__col--green">
+                        <ul>
+                            <li>
+                                <a class="text-light">COVID-19</a>
+                            </li><br>
+                            <li>
+                                <a href="#">Información sobre COVID-19</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </footer>
+        </section>
+        <section class="container base">
+            <div class="text-light-2 base__foot">
+                <i class="fab fa-whatsapp base__foot__logo"></i>
+                <i class="fab fa-twitter-square base__foot__logo"></i>
+                <i class="fab fa-facebook-f base__foot__logo"></i>
+                <i class="fab fa-youtube base__foot__logo"></i>
+                <i class="fab fa-instagram base__foot__logo"></i>
+                <i class="fab fa-pinterest-square base__foot__logo"></i>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
